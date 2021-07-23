@@ -1,12 +1,13 @@
-import React, {useEffect} from 'react';
-import './App.css';
-import Header from './Header.js';
-import Sidebar from './Sidebar.js';
-import Feed from "./Feed.js"
-import { useSelector , useDispatch } from 'react-redux';
-import { selectUser, login, logout } from './features/userSlice';
-import Login from './Login';
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import "./App.css";
+import { login, logout, selectUser } from "./features/userSlice";
+import Feed from "./Feed";
 import { auth } from "./firebase";
+import Header from "./Header";
+import Login from "./Login";
+import Sidebar from "./Sidebar";
+import Widget from "./Widget";
 
 
 
@@ -50,7 +51,7 @@ const dispatch = useDispatch();
         <Sidebar />
         <Feed />
 
-        {/* Widget */}
+        <Widget/>
 
 
 

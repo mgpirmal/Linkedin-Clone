@@ -26,7 +26,7 @@ function Sidebar() {
                 <img src="https://img.freepik.com/free-vector/gradient-liquid-abstract-background_52683-60469.jpg?size=626&ext=jpg" alt=""/>
                 <Avatar src={user.photoUrl} className="sidebarAvatar" />
                 <h2>{user.displayName}</h2>
-                <h4>{user.email[0]}</h4>
+                <h4>{user.email}</h4>
             </div>
 
         <div className="sidebarStats">

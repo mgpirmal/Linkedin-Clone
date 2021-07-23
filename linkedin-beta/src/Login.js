@@ -90,9 +90,11 @@ const register = () => {if (!name) {
        
             <button type="submit" onClick={loginToApp}>Sign In</button>
         </form>
-            <p>Not a member?{" "}
+            <p>Not a member? Fill out the form above and click{" "}
                 <span className="loginRegister" onClick={register}>Register Now</span>
             </p>
+            <p>Returning Members only require their Email and Password.</p>
+            
         </div>
     );
 }
